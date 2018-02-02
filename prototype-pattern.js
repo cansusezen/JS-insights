@@ -75,6 +75,6 @@ var Developer = Object.create(Person, {
 var cansu = Object.create(Developer);
 //Now cansu object points to the Developer object, the Developer object points to the Person object
 //Therefore cansu object's __proto__ property has the Developer object, the __proto__ of Developer object has the Person object
-cansu.init('Sr Developer' , 'Cansu' , 'Sezen');
+cansu.init('Sr. Developer' , 'Cansu' , 'Sezen');
 console.log(cansu.fullName());
 console.log(cansu.developerName());
