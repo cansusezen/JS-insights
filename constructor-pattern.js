@@ -45,6 +45,6 @@ Developer.prototype.developerName = function(){
   return this.title + ' ' +  this.firstName + ' ' + this.lastName;
 }
 
-var developer = new Developer('Sr Developer', 'Cansu', 'Sezen');
+var developer = new Developer('Sr. Developer', 'Cansu', 'Sezen');
 console.log(developer.fullName());
 console.log(developer.developerName());
