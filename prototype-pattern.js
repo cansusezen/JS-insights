@@ -1,4 +1,6 @@
-/*1 - CREATING THE INSTANCE*/
+//PROTOTYPAL INHERITANCE
+
+/*1 - Creating the instance*/
 
 /*One way to initialize the object in the prototype pattern:
 passing an object of description for the properties as the
@@ -53,7 +55,7 @@ var Person = {
 // console.log(cansu.fullName());
 
 
-/*2 - INHERITANCE*/
+/*2 - Implementing Inheritance*/
 
 var Developer = Object.create(Person, {
         init: {
@@ -69,6 +71,7 @@ var Developer = Object.create(Person, {
         }
       }
 });
+
 var cansu = Object.create(Developer);
 //Now cansu object points to the Developer object, the Developer object points to the Person object
 //Therefore cansu object's __proto__ property has the Developer object, the __proto__ of Developer object has the Person object
